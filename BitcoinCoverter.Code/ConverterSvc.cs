@@ -49,7 +49,7 @@ namespace CloudAcademy.BitcoinCoverter.Code
             return Math.Round(rate, 4);
         }
 
-        public async Task<double> ConvertBitcoins(Currency currency, int coins)
+        public async Task<double> ConvertBitcoins(Currency currency, double coins)
         {
             double dollars = 0;
             
