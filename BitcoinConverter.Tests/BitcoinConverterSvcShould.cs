@@ -73,7 +73,7 @@ namespace CloudAcademy.BitcoinConverter.Tests
             Assert.Equal(expectedValue,bitcoinExchange);
         }
 
-        [Theory]
+        /*[Theory]
         [InlineData(Currency.USD,1, -1)]
         public async void ConvertBitcoins_BitcoinsAPIServiceUnavailable_ReturnNegativeOne(Currency currency, int coins, double expectedValue)
         {
@@ -102,7 +102,7 @@ namespace CloudAcademy.BitcoinConverter.Tests
 
             //Assert
             Assert.Equal(expectedValue,bitcoinExchange);
-        }
+        }*/
 
         [Theory]
         [InlineData(Currency.USD,-1)]

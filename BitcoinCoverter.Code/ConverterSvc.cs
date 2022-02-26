@@ -41,9 +41,9 @@ namespace CloudAcademy.BitcoinCoverter.Code
 
                 rate = Double.Parse(rateStr.GetString());
             }
-            catch
+            catch(Exception ex)
             {
-                rate = -1;
+                throw ex;
             }
 
             return Math.Round(rate, 4);

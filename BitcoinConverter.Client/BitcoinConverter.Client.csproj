@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <PackageReference Include="NewtonSoft.Json" Version="12.0.3" />
-    <PackageReference Include="System.Text.Json" Version="6.0.2" />
     <Reference Include="BitcoinCoverter.Code.dll">
       <HintPath>libraries\BitcoinCoverter.Code.dll</HintPath>
     </Reference>    

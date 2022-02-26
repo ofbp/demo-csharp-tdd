@@ -17,11 +17,13 @@ namespace BitcoinConverter.Client
                     Console.Write("Coins: ");
                     var coins = Double.Parse(Console.ReadLine());
                     Console.Write("Currency (USD, GBP, or EUR): ");
-                    var currency = (Currency)Enum.Parse(typeof(Currency), Console.ReadLine(), true);
+                    var currency = (CloudAcademy.BitcoinCoverter.Code.Currency)Enum.Parse(typeof(CloudAcademy.BitcoinCoverter.Code.Currency), Console.ReadLine(), true);
+
+                    Console.Write(currency);
 
                     var amount = await converter.ConvertBitcoins(currency, coins);
 
-                    Console.WriteLine("{0} Bitcoins = {1} {2}", coins, amount, currency);
+                    Console.WriteLine(" {0} Bitcoins = {1} {2}", coins, amount, currency);
                 }
                 catch 
                 {
