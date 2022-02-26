@@ -20,7 +20,7 @@ namespace CloudAcademy.BitcoinCoverter.Code
         private HttpClient client;
         public ConverterSvc()
         {
-
+            this.client = new HttpClient();
         }
 
         public ConverterSvc(HttpClient httpClient)

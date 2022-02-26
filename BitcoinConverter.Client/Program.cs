@@ -25,9 +25,9 @@ namespace BitcoinConverter.Client
 
                     Console.WriteLine(" {0} Bitcoins = {1} {2}", coins, amount, currency);
                 }
-                catch 
+                catch(Exception ex)
                 {
-                    //swallow
+                    Console.Write(ex);
                 }
             }
         }
